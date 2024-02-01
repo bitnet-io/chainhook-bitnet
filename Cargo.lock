@@ -290,7 +290,6 @@ dependencies = [
  "clang-sys",
  "lazy_static",
  "lazycell",
- "log",
  "peeking_take_while",
  "proc-macro2",
  "quote",
@@ -298,7 +297,6 @@ dependencies = [
  "rustc-hash",
  "shlex",
  "syn 1.0.109",
- "which",
 ]
 
 [[package]]
@@ -718,7 +716,7 @@ dependencies = [
 [[package]]
 name = "clarity"
 version = "2.2.0"
-source = "git+https://github.com/stacks-network/stacks-core.git?branch=feat/clarity-wasm-next#7f52960ee613dd7317fce24379ef29cf131541dc"
+source = "git+https://github.com/stacks-network/stacks-core.git?rev=45843513a#45843513a18a44f7dd90f9dfb2756f6313249db1"
 dependencies = [
  "integer-sqrt",
  "lazy_static",
@@ -740,7 +738,7 @@ dependencies = [
 [[package]]
 name = "clarity-repl"
 version = "2.2.0"
-source = "git+https://github.com/hirosystems/clarinet.git?rev=4cf3b0fd#4cf3b0fd071488ee7b1b1281d1a83f83e73aa9a8"
+source = "git+https://github.com/hirosystems/clarinet.git?rev=324967e1#324967e17cf1eabd99e707fe906dc150bee352bc"
 dependencies = [
  "ansi_term",
  "atty",
@@ -1782,7 +1780,7 @@ checksum = "3011d1213f159867b13cfd6ac92d2cd5f1345762c63be3554e84092d85a50bbd"
 [[package]]
 name = "hiro-system-kit"
 version = "0.1.0"
-source = "git+https://github.com/hirosystems/clarinet.git?rev=4cf3b0fd#4cf3b0fd071488ee7b1b1281d1a83f83e73aa9a8"
+source = "git+https://github.com/hirosystems/clarinet.git?rev=324967e1#324967e17cf1eabd99e707fe906dc150bee352bc"
 dependencies = [
  "ansi_term",
  "atty",
@@ -2622,7 +2620,6 @@ version = "6.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5afcf536d20c074ef45371ee9a654dcfc46fb2dde18ecc54ec30c936eb850fa2"
 dependencies = [
- "bindgen",
  "bitvec",
  "bs58 0.4.0",
  "cc",
@@ -3966,7 +3963,7 @@ dependencies = [
 [[package]]
 name = "stacks-common"
 version = "0.0.2"
-source = "git+https://github.com/stacks-network/stacks-core.git?branch=feat/clarity-wasm-next#7f52960ee613dd7317fce24379ef29cf131541dc"
+source = "git+https://github.com/stacks-network/stacks-core.git?branch=feat/clarity-wasm-next#45843513a18a44f7dd90f9dfb2756f6313249db1"
 dependencies = [
  "chrono",
  "curve25519-dalek",
@@ -3995,7 +3992,7 @@ dependencies = [
 [[package]]
 name = "stacks-rpc-client"
 version = "2.2.0"
-source = "git+https://github.com/hirosystems/clarinet.git?rev=4cf3b0fd#4cf3b0fd071488ee7b1b1281d1a83f83e73aa9a8"
+source = "git+https://github.com/hirosystems/clarinet.git?rev=324967e1#324967e17cf1eabd99e707fe906dc150bee352bc"
 dependencies = [
  "clarity-repl",
  "hmac 0.12.1",
@@ -5235,18 +5232,6 @@ name = "webpki-roots"
 version = "0.25.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1778a42e8b3b90bff8d0f5032bf22250792889a5cdc752aa0020c84abe3aaf10"
-
-[[package]]
-name = "which"
-version = "4.4.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "87ba24419a2078cd2b0f2ede2691b6c66d8e47836da3b6db8265ebad47afbfc7"
-dependencies = [
- "either",
- "home",
- "once_cell",
- "rustix",
-]
 
 [[package]]
 name = "winapi"
