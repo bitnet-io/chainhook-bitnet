@@ -716,7 +716,7 @@ dependencies = [
 [[package]]
 name = "clarity"
 version = "2.2.0"
-source = "git+https://github.com/stacks-network/stacks-core.git?rev=345553357be556fe53474071d09cd453549ed02e#345553357be556fe53474071d09cd453549ed02e"
+source = "git+https://github.com/stacks-network/stacks-core.git?rev=1e9df56b255247928679961d0a7c2541ad127f59#1e9df56b255247928679961d0a7c2541ad127f59"
 dependencies = [
  "integer-sqrt",
  "lazy_static",
@@ -731,14 +731,13 @@ dependencies = [
  "sha2-asm",
  "slog",
  "stacks-common",
- "time 0.2.27",
  "wasmtime",
 ]
 
 [[package]]
 name = "clarity-repl"
 version = "2.2.1"
-source = "git+https://github.com/hirosystems/clarinet.git?rev=32cc9aa8#32cc9aa83afb6d5f0ccbbdef0d34076d9bee9476"
+source = "git+https://github.com/hirosystems/clarinet.git?rev=1458e224#1458e224d6aa8b53f49f50d880d6d0d078454438"
 dependencies = [
  "ansi_term",
  "atty",
@@ -1780,7 +1779,7 @@ checksum = "3011d1213f159867b13cfd6ac92d2cd5f1345762c63be3554e84092d85a50bbd"
 [[package]]
 name = "hiro-system-kit"
 version = "0.1.0"
-source = "git+https://github.com/hirosystems/clarinet.git?rev=32cc9aa8#32cc9aa83afb6d5f0ccbbdef0d34076d9bee9476"
+source = "git+https://github.com/hirosystems/clarinet.git?rev=1458e224#1458e224d6aa8b53f49f50d880d6d0d078454438"
 dependencies = [
  "ansi_term",
  "atty",
@@ -3992,7 +3991,7 @@ dependencies = [
 [[package]]
 name = "stacks-rpc-client"
 version = "2.2.1"
-source = "git+https://github.com/hirosystems/clarinet.git?rev=32cc9aa8#32cc9aa83afb6d5f0ccbbdef0d34076d9bee9476"
+source = "git+https://github.com/hirosystems/clarinet.git?rev=1458e224#1458e224d6aa8b53f49f50d880d6d0d078454438"
 dependencies = [
  "clarity-repl",
  "hmac 0.12.1",
