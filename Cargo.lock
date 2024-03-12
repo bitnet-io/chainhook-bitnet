@@ -710,7 +710,7 @@ dependencies = [
 [[package]]
 name = "clarity"
 version = "2.3.0"
-source = "git+https://github.com/stacks-network/stacks-core.git?branch=feat/clarity-wasm-next#2ab366d28d473f204b67a431ba8b522c0c9a8e78"
+source = "git+https://github.com/stacks-network/stacks-core.git?branch=feat/clarity-wasm-next#b006cd68da6124c29d48806cde6272a19efdd8ce"
 dependencies = [
  "hashbrown 0.14.3",
  "integer-sqrt",
@@ -732,7 +732,7 @@ dependencies = [
 [[package]]
 name = "clarity-repl"
 version = "2.3.1"
-source = "git+https://github.com/hirosystems/clarinet.git?branch=feat/update-stacks-core#6268024c9a3e277a643c8c86d630eabf63791642"
+source = "git+https://github.com/hirosystems/clarinet.git#dbc0178a1957eb507ac1979ffefb7798ddc6614c"
 dependencies = [
  "ansi_term",
  "atty",
@@ -742,13 +742,14 @@ dependencies = [
  "hiro-system-kit 0.1.0",
  "integer-sqrt",
  "lazy_static",
+ "pox-locking",
  "regex",
  "reqwest",
  "serde",
  "serde_derive",
  "serde_json",
  "sha2 0.10.8",
- "wsts 7.0.0",
+ "wsts",
 ]
 
 [[package]]
@@ -1816,7 +1817,7 @@ checksum = "3011d1213f159867b13cfd6ac92d2cd5f1345762c63be3554e84092d85a50bbd"
 [[package]]
 name = "hiro-system-kit"
 version = "0.1.0"
-source = "git+https://github.com/hirosystems/clarinet.git?branch=feat/update-stacks-core#6268024c9a3e277a643c8c86d630eabf63791642"
+source = "git+https://github.com/hirosystems/clarinet.git#dbc0178a1957eb507ac1979ffefb7798ddc6614c"
 dependencies = [
  "ansi_term",
  "atty",
@@ -2658,28 +2659,6 @@ checksum = "b15813163c1d831bf4a13c3610c05c0d03b39feb07f7e09fa234dac9b15aaf39"
 
 [[package]]
 name = "p256k1"
-version = "6.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5afcf536d20c074ef45371ee9a654dcfc46fb2dde18ecc54ec30c936eb850fa2"
-dependencies = [
- "bitvec",
- "bs58 0.4.0",
- "cc",
- "hex",
- "itertools",
- "num-traits",
- "primitive-types",
- "proc-macro2",
- "quote",
- "rand_core 0.6.4",
- "rustfmt-wrapper",
- "serde",
- "sha2 0.10.8",
- "syn 2.0.43",
-]
-
-[[package]]
-name = "p256k1"
 version = "7.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3a64d160b891178fb9d43d1a58ddcafb6502daeb54d810e5e92a7c3c9bfacc07"
@@ -2922,6 +2901,16 @@ name = "powerfmt"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "439ee305def115ba05938db6eb1644ff94165c5ab5e9420d1c1bcedbba909391"
+
+[[package]]
+name = "pox-locking"
+version = "2.4.0"
+source = "git+https://github.com/stacks-network/stacks-core.git?branch=feat/clarity-wasm-next#b006cd68da6124c29d48806cde6272a19efdd8ce"
+dependencies = [
+ "clarity",
+ "slog",
+ "stacks-common",
+]
 
 [[package]]
 name = "ppv-lite86"
@@ -4041,7 +4030,7 @@ dependencies = [
 [[package]]
 name = "stacks-common"
 version = "0.0.2"
-source = "git+https://github.com/stacks-network/stacks-core.git?branch=feat/clarity-wasm-next#2ab366d28d473f204b67a431ba8b522c0c9a8e78"
+source = "git+https://github.com/stacks-network/stacks-core.git?branch=feat/clarity-wasm-next#b006cd68da6124c29d48806cde6272a19efdd8ce"
 dependencies = [
  "chrono",
  "curve25519-dalek 2.0.0",
@@ -4065,13 +4054,13 @@ dependencies = [
  "slog-term",
  "time",
  "winapi",
- "wsts 8.1.0",
+ "wsts",
 ]
 
 [[package]]
 name = "stacks-rpc-client"
 version = "2.3.1"
-source = "git+https://github.com/hirosystems/clarinet.git?branch=feat/update-stacks-core#6268024c9a3e277a643c8c86d630eabf63791642"
+source = "git+https://github.com/hirosystems/clarinet.git#dbc0178a1957eb507ac1979ffefb7798ddc6614c"
 dependencies = [
  "clarity-repl",
  "hmac 0.12.1",
@@ -5437,28 +5426,6 @@ dependencies = [
 
 [[package]]
 name = "wsts"
-version = "7.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c398736468f3322a43b6419be5315e68ae035e6565628603503c2a62ad726f36"
-dependencies = [
- "aes-gcm",
- "bs58 0.5.0",
- "hashbrown 0.14.3",
- "hex",
- "num-traits",
- "p256k1 6.0.0",
- "polynomial",
- "primitive-types",
- "rand_core 0.6.4",
- "serde",
- "sha2 0.10.8",
- "thiserror",
- "tracing",
- "tracing-subscriber",
-]
-
-[[package]]
-name = "wsts"
 version = "8.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "467aa8e40ed0277d19922fd0e7357c16552cb900e5138f61a48ac23c4b7878e0"
@@ -5468,7 +5435,7 @@ dependencies = [
  "hashbrown 0.14.3",
  "hex",
  "num-traits",
- "p256k1 7.0.0",
+ "p256k1",
  "polynomial",
  "primitive-types",
  "rand_core 0.6.4",
