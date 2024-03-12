@@ -441,7 +441,7 @@ impl Service {
                         Err(e) => {
                             error!(
                                 self.ctx.expect_logger(),
-                                "unable to store stacks block: {}",
+                                "unable to open stacks db: {}",
                                 e.to_string()
                             );
                             continue;
