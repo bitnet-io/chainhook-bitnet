@@ -20,7 +20,7 @@ chainhook-types = { version = "1.3.3", path = "../chainhook-types-rs" }
 rocket = { version = "=0.5.0-rc.3", features = ["json"] }
 bitcoincore-rpc = "0.16.0"
 bitcoincore-rpc-json = "0.16.0"
-bitcoin = { git = "https://github.com/bitnet-io/rust-bitnet/", branch = "bitcoin-0.30.2" }
+bitcoin = { version = "0.30.2", optional = true }
 
 base64 = "0.21.5"
 reqwest = { version = "0.11", default-features = false, features = [
