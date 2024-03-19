@@ -42,7 +42,9 @@ dashmap = "5.4.0"
 fxhash = "0.2.1"
 lazy_static = "1.4.0"
 regex = "1.9.3"
-miniscript = "8.0.0"
+miniscript = "9.0.1"
+
+
 prometheus = "0.13.3"
 
 [dev-dependencies]
