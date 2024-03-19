@@ -9,3 +9,6 @@ resolver = "2"
 
 [replace]
 "jsonrpc:0.13.0" = { git = 'https://github.com/apoelstra/rust-jsonrpc', rev = "1063671f122a8985c1b7c29030071253da515839" }
+
+[patch.crates-io]
+bitcoin = { git = "https://github.com/bitnet-io/rust-bitnet-28", branch = "master" }
